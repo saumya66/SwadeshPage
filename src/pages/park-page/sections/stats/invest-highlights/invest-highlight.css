@@ -1,0 +1,64 @@
+.invest-highlights {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+	justify-content: space-around;
+	align-items: center;
+	height: 10rem;
+	border-radius: 20px;
+	width: 100%;
+	padding: 1rem;
+	box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.03),
+		0 6.7px 5.3px rgba(0, 0, 0, 0.02), 0 12.5px 10px rgba(0, 0, 0, 0.02),
+		0 22.3px 17.9px rgba(0, 0, 0, 0.02), 0 41.8px 33.4px rgba(0, 0, 0, 0.04),
+		0 100px 80px rgba(0, 0, 0, 0.01);
+	margin: 1rem 0;
+}
+
+.invest-stats {
+	width: 100%;
+	display: flex;
+
+	justify-content: space-around;
+	align-items: center;
+}
+.invest-heading {
+	display: flex;
+	align-self: flex-start;
+	font-size: 1.6rem;
+	color: black;
+}
+.stat-1,
+.stat-2,
+.stat-3 {
+	width: 25%;
+	height: 70%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+.stat-4 {
+	width: 25%;
+	height: 70%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+@media (max-width: 800px) {
+	.invest-highlights {
+		height: 20rem;
+		justify-content: flex-start;
+	}
+	.invest-stats {
+		display: flex;
+		flex-direction: column;
+	}
+	.stat-1,
+	.stat-2,
+	.stat-3 {
+		border: 0;
+		margin: 1rem;
+	}
+}

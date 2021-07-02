@@ -1,0 +1,164 @@
+h5,
+p {
+	margin: 0;
+	padding: 0;
+}
+.overview {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	height: 60%;
+	margin-bottom: 2rem;
+	justify-content: space-between;
+}
+.images-col {
+	width: 70%;
+	height: inherit;
+}
+.main-img {
+	width: 100%;
+	height: auto;
+}
+.building-pics {
+	padding-top: 0.5rem;
+	width: 100%;
+}
+
+.more-img {
+	width: 10%;
+	height: auto;
+	margin-right: 0.7rem;
+}
+.headstats-col {
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+	width: 25%;
+	max-height: inherit;
+	border-radius: 20px;
+
+	padding: 1rem;
+	box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.03),
+		0 6.7px 5.3px rgba(0, 0, 0, 0.02), 0 12.5px 10px rgba(0, 0, 0, 0.02),
+		0 22.3px 17.9px rgba(0, 0, 0, 0.02), 0 41.8px 33.4px rgba(0, 0, 0, 0.04),
+		0 100px 80px rgba(0, 0, 0, 0.01);
+}
+.park-name {
+	color: black;
+	font-size: 2.6rem;
+	padding-bottom: 1rem;
+}
+.cont1 {
+	display: flex;
+}
+.fa-map-marker {
+	font-size: 1rem;
+	background-color: #032c28;
+	margin-right: 0.5rem;
+}
+.location {
+	font-size: 1rem;
+}
+.percentage-range {
+	margin: 1rem 0;
+	display: flex;
+	width: 100%;
+}
+input[type="range"] {
+	width: 70%;
+}
+.funded {
+	font-size: 0.8rem;
+	font-weight: 700;
+	color: #032c28;
+}
+.invest-amt {
+	margin: 3rem 0;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.fa-rupee {
+	background-color: #032c28;
+}
+.invest-text {
+	font-size: 0.9rem;
+	margin-bottom: 1rem;
+}
+.invest-cont {
+	display: flex;
+
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	border-radius: 8px;
+	height: 2.4rem;
+	justify-content: center;
+	align-items: center;
+	padding: 0.5rem;
+}
+.fa {
+	width: 10%;
+	color: rgba(0, 0, 0, 0.3);
+}
+input[type="text"] {
+	border: none;
+	outline-width: 0;
+	font-size: 1rem;
+}
+.invest-input {
+	height: 2rem;
+	width: 80%;
+}
+textarea:focus,
+select:focus {
+	outline: none;
+}
+.stat-numbers {
+	margin: 2.6rem 0;
+	display: flex;
+	width: 100%;
+	margin-bottom: 3rem;
+}
+.stat-one {
+	width: 50%;
+	border-right: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.stat-two {
+	width: 50%;
+}
+
+.invest-btn {
+	background-color: #cb912c;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+	height: 3.4rem;
+	border-radius: 8px;
+	border: 0;
+}
+.invest-now {
+	color: white;
+	font-weight: 700;
+}
+.fa-arrow-right {
+	color: white;
+	font-size: 0.6rem;
+}
+
+@media (max-width: 800px) {
+	.overview {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+
+		margin-bottom: 2rem;
+	}
+
+	.images-col {
+		width: 100%;
+	}
+	.headstats-col {
+		width: 100%;
+	}
+}

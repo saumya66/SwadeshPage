@@ -1,0 +1,15 @@
+.stat {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.stat-value {
+	font-size: 1.4rem;
+	font-weight: 700;
+	color: black;
+}
+.stat-desc {
+	font-size: 0.8rem;
+	color: black;
+}

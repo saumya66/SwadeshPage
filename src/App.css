@@ -1,0 +1,44 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+html,
+body,
+#root {
+	height: 100%;
+	background-color: rgb(249, 249, 249);
+	font-family: THICCCBOI;
+}
+@font-face {
+	font-family: "THICCCBOI";
+	src: url(./assets/THICCCBOI-Regular.ttf);
+}
+.app {
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+
+.top-background {
+	position: relative;
+	z-index: 0;
+	height: 32rem;
+	background-color: #032c28;
+}
+
+.logo {
+	position: absolute;
+	z-index: 11;
+	padding-top: 2rem;
+	padding-left: 7rem;
+}
+.heading {
+	position: absolute;
+	z-index: 11;
+	font-size: 2.7rem;
+	font-weight: 800;
+	color: white;
+
+	padding-top: 10rem;
+	padding-left: 7rem;
+}
