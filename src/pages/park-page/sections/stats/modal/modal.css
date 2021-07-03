@@ -4,17 +4,16 @@
 	flex-direction: column;
 	background-color: white;
 	justify-content: flex-start;
-
-	height: 40rem;
+	height: 56rem;
 	border-radius: 20px;
 	width: 100%;
-
 	box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.03),
 		0 6.7px 5.3px rgba(0, 0, 0, 0.02), 0 12.5px 10px rgba(0, 0, 0, 0.02),
 		0 22.3px 17.9px rgba(0, 0, 0, 0.02), 0 41.8px 33.4px rgba(0, 0, 0, 0.04),
 		0 100px 80px rgba(0, 0, 0, 0.01);
 	margin-bottom: 1rem;
-	overflow: hidden;
+	overflow-x: scroll; /*Makes it scrollable in small devices*/
+	overflow-y: hidden;
 }
 
 .modal-stats {
@@ -32,7 +31,6 @@ table {
 	border-collapse: collapse;
 	font-size: 1rem;
 	min-width: 300px;
-	overflow: hidden;
 	/* box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); */
 }
 table thead tr {
@@ -88,4 +86,9 @@ input[type="text"] {
 textarea:focus,
 select:focus {
 	outline: none;
+}
+.graph-container {
+	width: 100%;
+	display: flex;
+	padding: 1rem;
 }

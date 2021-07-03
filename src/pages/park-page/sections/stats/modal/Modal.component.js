@@ -1,15 +1,35 @@
 import "./modal.css";
 import StatComponent from "../../../components/stat-component/Stat.component";
-
-const capitalHighlight = () => {
-	const ar = [1, 2, 3, 4, 5];
-	const rowNames = [
-		"capitalment",
-		"Lease Deposit",
-		"Rents",
-		"Sales Value",
-		"Total",
-	];
+import Graph from "../../../components/graph-comp/Graph.component";
+import { useState } from "react";
+const ar = [1, 2, 3, 4, 5];
+const rowNames = [
+	"capitalment",
+	"Lease Deposit",
+	"Rents",
+	"Sales Value",
+	"Total",
+];
+const graphsInfo = [
+	{
+		value: "1.12x",
+		name: "MOIC",
+	},
+	{
+		value: "18.5",
+		name: "Total IRR",
+	},
+	{
+		value: "12,338",
+		name: "Sale price psf",
+	},
+	{
+		value: "12,338",
+		name: "Profit amount",
+	},
+];
+const Modal = () => {
+	const [data, setData] = useState(graphsInfo);
 	return (
 		<div className="modal">
 			<h5 className="modal-heading">Financial Modal</h5>
@@ -49,8 +69,13 @@ const capitalHighlight = () => {
 					<input type="text" />
 				</div>
 			</div>
+			<div className="graph-container">
+				{data.map((singleData) => (
+					<Graph name={singleData.name} value={singleData.value} />
+				))}
+			</div>
 		</div>
 	);
 };
 
-export default capitalHighlight;
+export default Modal;

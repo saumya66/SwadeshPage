@@ -1,0 +1,43 @@
+.graph {
+	margin-right: 5%;
+	width: 12rem;
+	min-width: 5rem;
+	height: 16rem;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	padding: 1rem;
+}
+
+.graph-stat,
+.graph-name {
+	text-align: center;
+	font-weight: 800;
+	font-size: 0.9rem;
+	color: black;
+	padding-top: 1rem;
+}
+.graph-level {
+	position: relative;
+	height: 4rem;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+.y-value {
+	position: absolute;
+	z-index: 1;
+	bottom: -10px;
+	left: 0;
+	background-color: white;
+	padding-right: 0.3rem;
+}
+.graph-bar {
+	position: absolute;
+	z-index: 100;
+	bottom: 0;
+	left: 30px;
+	width: 40%;
+	min-width: 3rem;
+	height: 6rem;
+	background-color: #0f524b;
+}
