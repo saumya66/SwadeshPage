@@ -4,33 +4,28 @@ import React from "react";
 import { useState, useEffect } from "react";
 
 export const LocationHighlight = (props) => {
-	const [mapStyle, setMapStyle] = useState();
-	const myFunction = () => {
-		var x = window.matchMedia("(max-width: 900px)");
-		if (x.matches) {
-			// If media query matches
-			setMapStyle({
-				position: "absolute",
-				width: "90%",
-				height: "24rem",
-			});
-		} else {
-			setMapStyle({
-				position: "absolute",
-				width: "63%",
-				height: "24rem",
-			});
-		}
-	};
+	let mapStyle = {};
 
-	// useEffect(() => {
-	// 	myFunction();
-	// });
+	var x = window.matchMedia("(max-width: 900px)");
+	if (x.matches) {
+		// If media query matches
+		mapStyle = {
+			position: "absolute",
+			width: "90%",
+			height: "22rem",
+		};
+	} else {
+		mapStyle = {
+			position: "absolute",
+			width: "63%",
+			height: "22rem",
+		};
+	}
 
 	return (
 		<div className="map-location">
 			<h5 className="location-heading">Location highlights</h5>
-			<div className="cont1" style={{}}>
+			<div className="cont1" style={{ marginBottom: "1rem" }}>
 				<i className="fa fa-map-marker" style={{ margin: "0 1rem" }}></i>
 				<p className="location">Outer Ring Road, Bangalore</p>
 			</div>

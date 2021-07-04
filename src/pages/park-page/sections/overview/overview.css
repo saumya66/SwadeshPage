@@ -3,6 +3,8 @@ p {
 	margin: 0;
 	padding: 0;
 }
+.fa {
+}
 .overview {
 	display: flex;
 	flex-direction: row;
@@ -33,8 +35,11 @@ p {
 	display: flex;
 	flex-direction: column;
 	background-color: white;
+	justify-content: flex-start;
 	width: 25%;
-	max-height: inherit;
+	min-width: 280px;
+	height: 625px;
+	/* max-height: 625px; */
 	border-radius: 20px;
 	padding: 1rem;
 	box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.03),
@@ -42,6 +47,7 @@ p {
 		0 22.3px 17.9px rgba(0, 0, 0, 0.02), 0 41.8px 33.4px rgba(0, 0, 0, 0.04),
 		0 100px 80px rgba(0, 0, 0, 0.01);
 }
+
 .park-name {
 	color: black;
 	font-size: 1.6rem;
@@ -53,7 +59,8 @@ p {
 }
 .fa-map-marker {
 	font-size: 1rem;
-	background-color: #032c28;
+	color: #032c28;
+
 	margin-right: 0.5rem;
 }
 .location {
@@ -63,10 +70,35 @@ p {
 	margin: 1rem 0;
 	display: flex;
 	width: 100%;
+	justify-content: space-evenly;
+	align-items: center;
+	padding-top: 20px;
 }
+
 input[type="range"] {
+	background-color: #e7eeed;
+	overflow: hidden;
+	border-radius: 8px;
 	width: 70%;
+	height: 10px;
+	-webkit-appearance: none;
 }
+
+input[type="range"]::-webkit-slider-runnable-track {
+	-webkit-appearance: none;
+	margin-top: -1px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+	width: 20px;
+	-webkit-appearance: none;
+	height: 20px;
+	border-radius: 8px;
+	cursor: ew-resize;
+	background: #032c28;
+	box-shadow: -100px 0 0 100px #032c28;
+}
+
 .funded {
 	font-size: 0.8rem;
 	font-weight: 700;
@@ -79,7 +111,7 @@ input[type="range"] {
 	flex-direction: column;
 }
 .fa-rupee {
-	background-color: #032c28;
+	color: rgba(0, 0, 0, 0.3);
 }
 .invest-text {
 	font-size: 0.9rem;
@@ -95,15 +127,15 @@ input[type="range"] {
 	align-items: center;
 	padding: 0.5rem;
 }
-.fa {
-	width: 10%;
-	color: rgba(0, 0, 0, 0.3);
-}
+
 input[type="text"] {
 	border: none;
 	outline-width: 0;
 	font-size: 1rem;
 }
+/* .invest-cont{
+	margin-bottom: 100px;
+} */
 .invest-input {
 	height: 2rem;
 	width: 80%;
@@ -116,7 +148,6 @@ select:focus {
 	margin: 2.6rem 0;
 	display: flex;
 	width: 100%;
-	margin-bottom: 3rem;
 }
 .stat-one {
 	width: 50%;
@@ -128,6 +159,8 @@ select:focus {
 }
 
 .invest-btn {
+	cursor: pointer;
+	margin-top: 140px;
 	background-color: #cb912c;
 	display: flex;
 	align-items: center;
@@ -144,6 +177,7 @@ select:focus {
 .fa-arrow-right {
 	color: white;
 	font-size: 0.6rem;
+	margin-left: 0.5rem;
 }
 
 @media (max-width: 800px) {
@@ -154,6 +188,9 @@ select:focus {
 
 		margin-bottom: 2rem;
 	}
+	.headstats-col {
+		min-width: 180px;
+	}
 	.more-img {
 		width: 11%;
 		height: auto;
@@ -161,6 +198,7 @@ select:focus {
 	}
 	.images-col {
 		width: 100%;
+		margin-bottom: 1rem;
 	}
 	.headstats-col {
 		width: 90%;

@@ -8,12 +8,12 @@
 	height: 10rem;
 	border-radius: 20px;
 	width: 100%;
-
+	padding-top: 1rem;
 	box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.03),
 		0 6.7px 5.3px rgba(0, 0, 0, 0.02), 0 12.5px 10px rgba(0, 0, 0, 0.02),
 		0 22.3px 17.9px rgba(0, 0, 0, 0.02), 0 41.8px 33.4px rgba(0, 0, 0, 0.04),
 		0 100px 80px rgba(0, 0, 0, 0.01);
-	margin: 1rem 0;
+	margin-bottom: 1rem;
 }
 
 .invest-stats {
@@ -27,7 +27,7 @@
 	display: flex;
 	padding: 0 1rem;
 	align-self: flex-start;
-	font-size: 1.6rem;
+	font-size: 1.3rem;
 	color: black;
 }
 .stat-1,
